@@ -75,6 +75,13 @@
                 <span class="nav-icon">👤</span><span>Patient History</span>
             </a>
 
+            <% if ("ADMIN".equals(user.getRole())) { %>
+            <div class="nav-section-label">Admin</div>
+            <a href="users" class="nav-item">
+                <span class="nav-icon">👥</span><span>User Management</span>
+            </a>
+            <% } %>
+
             <div class="nav-section-label">Other</div>
             <a href="help.jsp" class="nav-item">
                 <span class="nav-icon">❓</span><span>Help</span>
