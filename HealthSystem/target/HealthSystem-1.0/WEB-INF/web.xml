@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1"
+         metadata-complete="true">
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- Admin -->
+    <servlet><servlet-name>AdminLoginServlet</servlet-name><servlet-class>com.health.servlet.admin.AdminLoginServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>AdminLoginServlet</servlet-name><url-pattern>/admin/login</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>AdminLogoutServlet</servlet-name><servlet-class>com.health.servlet.admin.AdminLogoutServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>AdminLogoutServlet</servlet-name><url-pattern>/admin/logout</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>AdminAppointmentServlet</servlet-name><servlet-class>com.health.servlet.admin.AdminAppointmentServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>AdminAppointmentServlet</servlet-name><url-pattern>/admin/appointments</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>AdminDoctorServlet</servlet-name><servlet-class>com.health.servlet.admin.AdminDoctorServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>AdminDoctorServlet</servlet-name><url-pattern>/admin/doctors</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>AdminPatientServlet</servlet-name><servlet-class>com.health.servlet.admin.AdminPatientServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>AdminPatientServlet</servlet-name><url-pattern>/admin/patients</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>AdminStaffServlet</servlet-name><servlet-class>com.health.servlet.admin.AdminStaffServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>AdminStaffServlet</servlet-name><url-pattern>/admin/staff</url-pattern></servlet-mapping>
+
+    <!-- Patient -->
+    <servlet><servlet-name>PatientLoginServlet</servlet-name><servlet-class>com.health.servlet.patient.PatientLoginServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>PatientLoginServlet</servlet-name><url-pattern>/patient/login</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>PatientLogoutServlet</servlet-name><servlet-class>com.health.servlet.patient.PatientLogoutServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>PatientLogoutServlet</servlet-name><url-pattern>/patient/logout</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>PatientRegisterServlet</servlet-name><servlet-class>com.health.servlet.patient.PatientRegisterServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>PatientRegisterServlet</servlet-name><url-pattern>/patient/register</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>PatientAppointmentServlet</servlet-name><servlet-class>com.health.servlet.patient.PatientAppointmentServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>PatientAppointmentServlet</servlet-name><url-pattern>/patient/appointment</url-pattern></servlet-mapping>
+
+    <!-- Staff -->
+    <servlet><servlet-name>StaffLoginServlet</servlet-name><servlet-class>com.health.servlet.staff.StaffLoginServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>StaffLoginServlet</servlet-name><url-pattern>/staff/login</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>StaffLogoutServlet</servlet-name><servlet-class>com.health.servlet.staff.StaffLogoutServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>StaffLogoutServlet</servlet-name><url-pattern>/staff/logout</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>StaffRegisterServlet</servlet-name><servlet-class>com.health.servlet.staff.StaffRegisterServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>StaffRegisterServlet</servlet-name><url-pattern>/staff/register</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>StaffAppointmentServlet</servlet-name><servlet-class>com.health.servlet.staff.StaffAppointmentServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>StaffAppointmentServlet</servlet-name><url-pattern>/staff/appointment</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>StaffBillServlet</servlet-name><servlet-class>com.health.servlet.staff.StaffBillServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>StaffBillServlet</servlet-name><url-pattern>/staff/bill</url-pattern></servlet-mapping>
+
+</web-app>
